@@ -2,8 +2,7 @@
 
 // function findKthLargest(nums, k) {
 
-//     nums.sort(function(a, b){return a - b});
-//     nums.reverse();
+//     nums.sort(function(a, b){return b - a});
 //     return nums[k-1];
 // }
 
