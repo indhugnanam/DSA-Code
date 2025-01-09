@@ -1,32 +1,34 @@
-// function ascStar(num) {
-//     let star = '';
 
-//     for (let i=0; i<= num-1; i++) {
-//         star = star + '*';
-//         console.log(star);
-//     }
-// }
-
-// ascStar(5);
-
-// function desStar(num) {
-
-//     for (let i=num; i >= 0; i--) {
-//         console.log('*'.repeat(i));
-//     }
-// }
-
-// desStar(5);
-
-
-function ascNum(num) {
-
-    for (let i=1; i <=num; i++) {
-        for (let j=1; j <= i; j++) {
-            process.stdout.write(j.toString());
+function ascStar(num) {
+    for (let i = 1; i <= num; i++) {
+        for (let j = 0; j < i; j++) {
+            process.stdout.write('*');
         }
         console.log('');
     }
 }
+ascStar(5);
 
-ascNum(5);
+// function descStar(num) {
+//     for (let i = 0; i < num; i++) {
+//         for (let j = num-i; j > 0; j--) {
+//             process.stdout.write('*');
+//         }
+//         console.log('');
+//     }
+// }
+// descStar(5);
+
+
+
+// function ascNum(num) {
+
+//     for (let i=1; i <=num; i++) {
+//         for (let j=1; j <= i; j++) {
+//             process.stdout.write(j+'');
+//         }
+//         console.log('');
+//     }
+// }
+
+// ascNum(5);
