@@ -1,6 +1,11 @@
 function pattern31(num) {
-    for (let row = 0; row < 2 * num; row++) {
-        
+    let n = 2 * num;
+    for (let row = 1; row < n; row++) {
+        for (let col = 1; col < n; col++) {
+            let val = Math.max(row, n-col, n-row, col)
+            process.stdout.write(val-num+1+'');
+        }
+        console.log('');
     }
 }
 
